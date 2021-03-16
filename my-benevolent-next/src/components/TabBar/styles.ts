@@ -13,6 +13,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items:center;
 
   button {
     border: none;
@@ -29,6 +30,10 @@ export const Container = styled.div`
   a {
     text-decoration: none;
   }
+
+  @media(max-width:500px){
+    justify-content:center
+  }
 `
 export const Logo = styled.div`
   display: flex;
@@ -40,31 +45,37 @@ export const Logo = styled.div`
     font-family: 'Great Vibes', Verdana, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 5vw;
-    line-height: 1.5rem;
+    font-size: 4vw;
+    line-height: 1.3rem;
   }
 `
-export const LeftItens = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 10px;
-`
-export const RightItens = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 10px:
-`
-
 export const Avatar = styled.div`
   display: flex;
   align-items: center;
   > img {
     width: 100%;
-    max-width: 60px;
+    max-width: 40px;
     height: auto;
     border-radius: 50%;
+  }
+`
+
+export const LeftItens = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  @media(max-width:500px){
+    display:none;
+  }
+`
+export const RightItens = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 10px;
+  @media(max-width:500px){
+    display:none;
   }
 `
 
