@@ -7,7 +7,7 @@ export const Container = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  height: 72px;
+  height: 65px;
   background: ${(props) => props.theme.colors.primary};
   border-radius: 10px;
   display: flex;
@@ -17,7 +17,8 @@ export const Container = styled.div`
 
   button {
     border: none;
-    height: 100%;
+    height: 65px;
+    width: 100%;
     display: block;
     cursor: pointer;
     background: ${(props) => props.theme.colors.primary};
@@ -47,6 +48,26 @@ export const Logo = styled.div`
     font-weight: normal;
     font-size: 4vw;
     line-height: 1.3rem;
+  }
+`
+export const LoginBtn = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80;
+  background: ${(props) => props.theme.colors.header_button_active};
+  border-radius: 2px;
+
+  span {
+    padding: 0 0.7vw;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    color: ${props => props.theme.colors.white};
   }
 `
 export const Avatar = styled.div`
