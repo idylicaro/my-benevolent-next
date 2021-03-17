@@ -13,7 +13,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 
   button {
     border: none;
@@ -31,8 +31,8 @@ export const Container = styled.div`
     text-decoration: none;
   }
 
-  @media(max-width:500px){
-    justify-content:center
+  @media (max-width: 500px) {
+    justify-content: center;
   }
 `
 export const Logo = styled.div`
@@ -65,8 +65,8 @@ export const LeftItens = styled.div`
   justify-content: space-around;
   align-items: center;
   padding-left: 10px;
-  @media(max-width:500px){
-    display:none;
+  @media (max-width: 500px) {
+    display: none;
   }
 `
 export const RightItens = styled.div`
@@ -74,8 +74,8 @@ export const RightItens = styled.div`
   justify-content: space-around;
   align-items: center;
   padding-right: 10px;
-  @media(max-width:500px){
-    display:none;
+  @media (max-width: 500px) {
+    display: none;
   }
 `
 
